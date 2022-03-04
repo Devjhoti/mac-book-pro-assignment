@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro 2021</title>
+    
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./images/favicon/apple_icon2.png" type="image/x-icon">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/product-macBook.css">
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="body-back">
+    <!-- header starts -->
+    <header>
+        <nav class="w-3/4 mx-auto border-1 rounded-2xl bg-gray-100 bg-gradient-to-b py-1">
+            <img class="mx-auto rounded-3xl border pb-2 px-1 bg-gray-200 " src="./images/apple-background.png" alt="" width="50">
+        </nav>
+    </header>
+    <!-- header ends -->
+
+    <!-- main section starts  -->
+    <main class="w-3/4 mx-auto">
+        <section class=" flex justify-between">
+
+            <!-- product image  -->
+            <div class="mr-10 ml-10">
+                <img src="./images/macBookPro2021.png" class="w-100" alt="">
+            </div>
+
+            <!-- product description sectionw-->
+            <div class="pl-20 pt-28">
+                <div style="width: 95%;">
+                    <h1 class="font-medium text-5xl ">Apple MacBook Pro 14-inch with M1 Pro chip 1TB SSD <br> (Space Grey) [2021]</h1>
+                <p class="text-2xl pt-10 font-medium">MacBook Pro. Max power. More portable.
+                    Key features</p>
+                    <ul class="list-disc w-11/12 mx-auto">
+                        <li>Apple M1 Pro chip for a massive leap in CPU, GPU and machine learning performance</li>
+                        <li>10-core CPU delivers up to 3.7x faster performance to fly through pro workflows quicker than ever</li>
+                        <li>16-core GPU with up to 13x faster performance for graphics-intensive apps and games3</li>
+                    </ul>
+                </div>
+                
+                <!--product specifications section -->
+                <div class="specifications mt-10 ">
+                    <h2 class="mb-1 text-2xl font-medium ">Memory</h2>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">8 GB unified memory</button>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">16 GB unified memory</button>
+
+                    <h2 class="mb-1 mt-14 text-2xl font-medium ">Storage</h2>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">256GB SSD storage</button>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">512GB SSD storage</button>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">1TB SSD storage</button>
+
+                    <h2 class="mb-1 mt-14 text-2xl font-medium ">Choose your delivery option</h2>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">Friday, Aug 25 FREE Delivery</button>
+                    <button class="spec-btn py-2  px-6 rounded hover\:bg-gray-400">Friday, Aug 21 Delivery charge $20</button>
+                    
+                    <!-- pricing section  -->
+                    <ul class="w-1/2  mb-1 mt-14 text-xl font-medium">
+                        <li class="flex justify-between border-b-2">
+                            <p>Best Price</p>
+                            <p>$<span id="best-price">1299</span></p>
+                        </li>
+                        <li class="flex justify-between border-b-2">
+                            <p>Extra Memory Cost</p>
+                            <p>$<span id="extra-memory-cost">0</span></p>
+                        </li>
+                        <li class="flex justify-between border-b-2">
+                            <p>Extra Storage Cost</p>
+                            <p>$<span id="extra-storage-cost">0</span></p>
+                        </li>
+                        <li class="flex justify-between border-black border-b-4">
+                            <p>Delivery charge</p>
+                            <p>$<span id="delivery-charge">0</span></p>
+                        </li>
+                        <li class="flex justify-between ">
+                            <p>Total Price</p>
+                            <p>$<span id="total-price">0</span></p>
+                        </li>
+                        
+                    </ul>
+                    <input class="border-2 px-3 py-1 my-4" type="text" placeholder="Apply Promo Code">
+                    <button id="promo-apply-btn">Apply</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <!-- main section ends  -->
+    
+    <!-- footer section  -->
+    <footer class="text-5xl text-center border-t-2 mt-10 py-5">
+        <p>Total: $<span id="total-dp">1299</span></p>
+    </footer>
+    
+    <!-- JavaScript Added -->
+    <script src="./js/mackBookPro.js"></script>
+</body>
+</html>
