@@ -129,7 +129,7 @@ expressDelivery.addEventListener('click',function(){
 })
 
 promoApplyBtn.addEventListener('click',function(){
-    if(promoInput.value=='apple2022fest'){
+    if(promoInput.value=='stevekaku'){
         totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText)-100;
         totalPrice.innerText=totalPriceDp.innerText;
 
