@@ -46,6 +46,7 @@ btn8Gb.addEventListener('click',function(){
     extraMemoryCost.innerText=0;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 btn16Gb.addEventListener('click',function(){
     btn16Gb.style.backgroundColor='rgb(61, 61, 61)';
@@ -56,6 +57,7 @@ btn16Gb.addEventListener('click',function(){
     extraMemoryCost.innerText=180;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 ssd256Gb.addEventListener('click',function(){
     ssd256Gb.style.backgroundColor='rgb(61, 61, 61)';
@@ -70,6 +72,7 @@ ssd256Gb.addEventListener('click',function(){
     extraStorageCost.innerText=0;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 ssd512Gb.addEventListener('click',function(){
     ssd512Gb.style.backgroundColor='rgb(61, 61, 61)';
@@ -84,6 +87,7 @@ ssd512Gb.addEventListener('click',function(){
     extraStorageCost.innerText=100;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 ssd1Tb.addEventListener('click',function(){
     ssd1Tb.style.backgroundColor='rgb(61, 61, 61)';
@@ -98,6 +102,7 @@ ssd1Tb.addEventListener('click',function(){
     extraStorageCost.innerText=180;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 freeDelivery.addEventListener('click',function(){
     freeDelivery.style.backgroundColor='rgb(61, 61, 61)';
@@ -108,6 +113,7 @@ freeDelivery.addEventListener('click',function(){
     deliveryCharge.innerText=0;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 expressDelivery.addEventListener('click',function(){
     expressDelivery.style.backgroundColor='rgb(61, 61, 61)';
@@ -119,15 +125,22 @@ expressDelivery.addEventListener('click',function(){
     deliveryCharge.innerText=20;
 
     totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+    totalPrice.innerText=totalPriceDp.innerText;
 })
 
 promoApplyBtn.addEventListener('click',function(){
     if(promoInput.value=='apple2022fest'){
         totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText)-100;
+        totalPrice.innerText=totalPriceDp.innerText;
+
         document.getElementById('promo-applied').style.display='flex';
         promoAlert.style.display='none';
     }
     else{
+        totalPriceDp.innerText=getTotalPrice(bestPrice.innerText,extraMemoryCost.innerText,extraStorageCost.innerText,deliveryCharge.innerText);
+        totalPrice.innerText=totalPriceDp.innerText;
+
         promoAlert.style.display='block';
+        document.getElementById('promo-applied').style.display='none';
     }
 })
